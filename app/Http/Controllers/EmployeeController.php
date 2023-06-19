@@ -38,7 +38,12 @@ class EmployeeController extends Controller
 
     public function show(string $id)
     {
+        $pageTitle = 'Employee Detail';
 
+        // ELOQUENT
+        $employee = Employee::find($id);
+
+        return view('employee.show', compact('pageTitle', 'employee'));
     }
 
     public function edit(string $id)
