@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <div class="container mt-4">
         <div class="row mb-0">
@@ -9,7 +8,7 @@
             <div class="col-lg-3 col-xl-2">
                 <div class="d-grid gap-2">
                     <a href="{{ route('employees.create') }}" class="btn btn-primary">Create Employee</a>
-                </div>  
+                </div>
             </div>
         </div>
         <hr>
