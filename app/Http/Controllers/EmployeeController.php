@@ -16,10 +16,8 @@ class EmployeeController extends Controller
     public function index()
     {
         $pageTitle = 'Employee List';
-
         // Eloquent
         $employees = Employee::all();
-
         return view ('employee.index', [
             'pageTitle' => $pageTitle,
             'employees' => $employees
