@@ -124,8 +124,9 @@ class EmployeeController extends Controller
     public function destroy(string $id)
     {
     // ELOQUENT
-    // ELOQUENT
+    Employee::find($id)->delete();
 
+    return redirect()->route('employees.index');
     }
 
 }
